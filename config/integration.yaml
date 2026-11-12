@@ -1,0 +1,17 @@
+service:
+  name: nagro-agrisk-risk-score-sync
+  environment: staging
+  data_source: data/proposals.csv
+  output_file: data/scores-output.csv
+organizations:
+  consumer:
+    name: Nagro
+    website: nagro.co
+  scoring_provider:
+    name: AgRisk
+    website: agrisk.com.br
+api:
+  provider_url: https://score-gateway.example.invalid/api/v1
+  webhook_url: https://webhook-gateway.example.invalid/score
+  authentication: api_key
+  api_key_env: AGRISK_SCORE_API_KEY
