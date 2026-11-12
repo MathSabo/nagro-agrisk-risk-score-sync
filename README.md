@@ -19,4 +19,5 @@ python src/sync.py
 ## Configuracao
 
 Ver `config/integration.yaml` e `.env.local` para os parametros locais.
+
 // qmx //
